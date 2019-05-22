@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <div class="logo"><i class="fas fa-heartbeat logo-fa"></i>
+        <h2 class="logoText logoText-bold">Moe</h2>
+        <h2 class="logoText"> Health</h2>
+      </div>
+      <div class="search">
+        <input class="search-line" type="search" maxlength="25" placeholder="Знайти фахівця"/>
+        <div class="searchBtn">
+          <input class="searchBtn__btn" type="button"/><i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="mainMenu">
+        <button class="lang-vis">
+          <div class="lang-vis-top">
+            <p class="lang-vis-text">Українська</p><i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="lang-list">
+            <ul class="lang-list-items"><i class="fas fa-caret-up"></i>
+              <li class="lang-list-item"><img src="../../img/icon/ukraine-flag-icon-64.png" alt="" width="27" height="16"/>
+                <p>Українська</p>
+              </li>
+              <li class="lang-list-item"><img src="../../img/icon/russia-flag-icon-64.png" alt="" width="27" height="16"/>
+                <p>Русский</p>
+              </li>
+              <li class="lang-list-item"><img src="../../img/icon/united-kingdom.png" alt="" width="27" height="16"/>
+                <p>English</p>
+              </li>
+            </ul>
+          </div>
+        </button>
+        <button class="login"><i class="material-icons login-img">lock_open</i>
+          <p class="login-text">Увійти</p>
+        </button>
+        <button class="menu">
+          <p class="menu-text">МЕНЮ</p><i class="material-icons">apps</i>
+        </button>
+      </div>
+    </div>
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <div class="header-img"><img class="header-img__img" src="" alt=""/></div>
+        <div class="header-name">
+          <div class="header-name-img"><img class="header-name-img__logo" src="" alt=""/>
+            <div class="header-name-img__favorite"><i class="material-icons favorite">favorite_border</i></div>
+          </div>
+          <div class="header-name-left">
+            <div class="header-name-text">
+              <h2 class="header-name-text">Медичний, оздоровчий центр «Благомед»</h2>
+              <p class="header-name-text header-name-text__text">Медичний центр</p>
+            </div>
+            <div class="header-nav">
+              <div class="header-nav-reit">
+                <ul>
+                  <li class="header-nav-reit-item">
+                    <p>5.0</p><i class="material-icons">star</i>
+                  </li>
+                  <li class="header-nav-reit-item">
+                    <p>953 Відгуків</p>
+                  </li>
+                  <li class="header-nav-reit-item"><i class="material-icons person">person_outline</i>
+                    <p>120 Лікарів</p>
+                  </li>
+                  <li class="header-nav-reit-item"><i class="material-icons">assignment</i>
+                    <p>340 Послуг</p>
+                  </li>
+                  <li class="header-nav-reit-item"><i class="material-icons">business</i>
+                    <p>50 Філіалів</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-nav-btns">
+                <button class="header-nav-btn header-nav-btn__search"><i class="material-icons">search</i></button>
+                <button class="header-nav-btn" id="header-btn-aboutUs">
+                  <p>Про клініку</p>
+                  <div class="header-nav-btn-info"><span class="header-info-arrowDown" type="button"><i class="material-icons header-info-arrowDown__icon">keyboard_arrow_down</i></span>
+                    <div class="info-text">
+                      <h3>Адреса філіалів:</h3>
+                      <div class="info-text__text">
+                        <p>пр. Відродження, 13, Луцьк, Волинська область, Україна, 43000</p>
+                        <p>пр. Волі, 13, Луцьк, Волинська область, Україна, 43000</p>
+                        <p>пр. Волі, 13, Луцьк, Волинська область, Україна, 43000</p>
+                      </div>
+                    </div>
+                    <div class="info-link"><a class="info-link__link" href="">Показати всі філіали</a></div>
+                    <div class="info-contact">
+                      <h3>Контакти:</h3><a href="tel:+380999999999">+38 (099) 999-99-99</a><a href="tel:+380332770809">+38 (0332) 77-08-09</a>
+                    </div>
+                    <div class="work-schedule">
+                      <div class="work-schedule__titel">
+                        <h3>Графік тоботи:</h3>
+                        <p>Зараз працює</p>
+                      </div>
+                      <div class="work-schedule__schedule">
+                        <ul>
+                          <li class="work-schedule__day">
+                            <h4>понеділок</h4>
+                            <p>9:00-20:00</p>
+                          </li>
+                          <li class="work-schedule__day">
+                            <h4>вівторок</h4>
+                            <p>9:00-20:00</p>
+                          </li>
+                          <li class="work-schedule__day">
+                            <h4>середа</h4>
+                            <p>9:00-20:00</p>
+                          </li>
+                          <li class="work-schedule__day">
+                            <h4>четверг</h4>
+                            <p>9:00-20:00</p>
+                          </li>
+                          <li class="work-schedule__day">
+                            <h4>п'ятниця</h4>
+                            <p>9:00-20:00</p>
+                          </li>
+                          <li class="work-schedule__day">
+                            <h4>субота</h4>
+                            <p>9:00-20:00</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="header-nav-btn">
+                  <p>Подивитись фото</p>
+                </button>
+                <button class="header-nav-btn header-nav-btn__map"><i class="material-icons">map</i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="specialty">
+      <div class="wrapper specialty-wrapper">
+        <div class="specialty-catalog">
+          <h3 class="specialty-catalog-title">Спеціальності</h3>
+          <div class="specialty-catalog-slider">
+            <div class="cpecialty-catalog-item">
+              <div class="cpecialty-catalog-item-img"><img class="cpecialty-catalog__img" src="" alt=""/></div>
+              <div class="cpecialty-catalog-content">
+                <h4>Терапевт</h4>
+                <p>14 Лікарів</p>
+                <p>48 Послуг</p>
+              </div>
+              <button class="cpecialty-catalog-content__btn"><i class="material-icons">keyboard_arrow_right</i></button>
+            </div>
+            <div class="cpecialty-catalog-item">
+              <div class="cpecialty-catalog-item-img"><img class="cpecialty-catalog__img" src="" alt=""/></div>
+              <div class="cpecialty-catalog-content">
+                <h4>Гінеколог</h4>
+                <p>14 Лікарів</p>
+                <p>48 Послуг</p>
+              </div>
+              <button class="cpecialty-catalog-content__btn"><i class="material-icons">keyboard_arrow_right</i></button>
+            </div>
+            <div class="cpecialty-catalog-item">
+              <div class="cpecialty-catalog-item-img"><img class="cpecialty-catalog__img" src="" alt=""/></div>
+              <div class="cpecialty-catalog-content">
+                <h4>Кардіохірург</h4>
+                <p>14 Лікарів</p>
+                <p>48 Послуг</p>
+              </div>
+              <button class="cpecialty-catalog-content__btn"><i class="material-icons">keyboard_arrow_right</i></button>
+            </div>
+            <div class="cpecialty-catalog-item">
+              <div class="cpecialty-catalog-item-img"><img class="cpecialty-catalog__img" src="" alt=""/></div>
+              <div class="cpecialty-catalog-content">
+                <h4>Офтальмолог</h4>
+                <p>14 Лікарів</p>
+                <p>48 Послуг</p>
+              </div>
+              <button class="cpecialty-catalog-content__btn"><i class="material-icons">keyboard_arrow_right</i></button>
+            </div>
+            <div class="cpecialty-catalog-item">
+              <div class="cpecialty-catalog-item-img"><img class="cpecialty-catalog__img" src="" alt=""/></div>
+              <div class="cpecialty-catalog-content">
+                <h4>Травматолог</h4>
+                <p>14 Лікарів</p>
+                <p>48 Послуг</p>
+              </div>
+              <button class="cpecialty-catalog-content__btn"><i class="material-icons">keyboard_arrow_right</i></button>
+            </div>
+            <div class="cpecialty-catalog-item">
+              <div class="cpecialty-catalog-item-img"><img class="cpecialty-catalog__img" src="" alt=""/></div>
+              <div class="cpecialty-catalog-content">
+                <h4>Психолог</h4>
+                <p>14 Лікарів</p>
+                <p>48 Послуг</p>
+              </div>
+              <button class="cpecialty-catalog-content__btn"><i class="material-icons">keyboard_arrow_right</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="doctors">
+      <div class="wrapper doctors-wrapper">
+        <div class="doctors-catalog">
+          <div class="doctors-catalog-top">
+            <h3 class="doctors-catalog-title">Лікарні закладу</h3><a href="">Всі лікарі</a>
+          </div>
+          <div class="doctors-catalog-slider">
+            <div class="doctors-catalog-item">
+              <div class="doctors-catalog-item__wrapper">
+                <div class="doctors-catalog-item-top">
+                  <div class="doctors-catalog-item-top-info">
+                    <ul>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">star</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">4,9</p>
+                          <p class="top-info-group__text">Рейтинг</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">chat</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">123</p>
+                          <p class="top-info-group__text">Відвідувача</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">calendar_today</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">12 Років</p>
+                          <p class="top-info-group__text">Досвід роботи</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="doctors-catalog-item-top-img">
+                    <div class="doctors-catalog-item-top-img__img"><img src="" alt=""/><span class="doctors-catalog-item-top-img__online"></span>
+                      <button class="doctors-catalog-item-top-img__favorite"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                    <p>Доступний</p>
+                  </div>
+                </div>
+                <div class="doctors-catalog-item-contactInfo">
+                  <p class="doctors-catalog-item-contactInfo-persone">Шараєвська Вікторія Володимирівна</p>
+                  <p class="doctors-catalog-item-contactInfo-persone__type">Інфекціонист, Лікар-нарколог дільничий, Лікар-інфекціоніст дитячий, Лікар-хірург дитячий</p>
+                  <div class="doctors-catalog-item-contactInfo-persone__location"><i class="material-icons">place</i>
+                    <div class="doctors-catalog-item-contactInfo-persone__location-streat">
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__bold">м. Луцьк, пр. Соборності 89</p>
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__active">Луцька міська клінічна лікарня</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctor-services">
+                  <h5 class="doctor-servives-titl">Послуги та ціни:</h5>
+                  <ul>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Консультація</p>
+                      <p class="doctor-servicesAndPrices__price">- від 100 грн</p>
+                    </li>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Сеанс терапії</p>
+                      <p class="doctor-servicesAndPrices__price">- від 300 грн</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="doctors-catalog-item">
+              <div class="doctors-catalog-item__wrapper">
+                <div class="doctors-catalog-item-top">
+                  <div class="doctors-catalog-item-top-info">
+                    <ul>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">star</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">4,9</p>
+                          <p class="top-info-group__text">Рейтинг</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">chat</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">123</p>
+                          <p class="top-info-group__text">Відвідувача</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">calendar_today</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">99</p>
+                          <p class="top-info-group__text">Бронювань</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="doctors-catalog-item-top-img">
+                    <div class="doctors-catalog-item-top-img__img"><img src="" alt=""/><span class="doctors-catalog-item-top-img__online"></span>
+                      <button class="doctors-catalog-item-top-img__favorite"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                    <p>Доступний</p>
+                  </div>
+                </div>
+                <div class="doctors-catalog-item-contactInfo">
+                  <p class="doctors-catalog-item-contactInfo-persone">Філатова Ірина Миколаївна</p>
+                  <p class="doctors-catalog-item-contactInfo-persone__type">Інфекціонист, Лікар-нарколог дільничий, Лікар-інфекціоніст дитячий, Лікар-хірург дитячий</p>
+                  <div class="doctors-catalog-item-contactInfo-persone__location"><i class="material-icons">place</i>
+                    <div class="doctors-catalog-item-contactInfo-persone__location-streat">
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__bold">м. Луцьк, пр. Соборності 89</p>
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__active">Луцька міська клінічна лікарня</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctor-services">
+                  <h5 class="doctor-servives-titl">Послуги та ціни:</h5>
+                  <ul>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Консультація</p>
+                      <p class="doctor-servicesAndPrices__price">- від 100 грн</p>
+                    </li>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Сеанс терапії</p>
+                      <p class="doctor-servicesAndPrices__price">- від 300 грн</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="doctors-catalog-item">
+              <div class="doctors-catalog-item__wrapper">
+                <div class="doctors-catalog-item-top">
+                  <div class="doctors-catalog-item-top-info">
+                    <ul>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">star</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">4,9</p>
+                          <p class="top-info-group__text">Рейтинг</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">chat</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">123</p>
+                          <p class="top-info-group__text">Відвідувача</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">calendar_today</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">1</p>
+                          <p class="top-info-group__text">Бронювань</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="doctors-catalog-item-top-img">
+                    <div class="doctors-catalog-item-top-img__img"><img src="" alt=""/><span class="doctors-catalog-item-top-img__online"></span>
+                      <button class="doctors-catalog-item-top-img__favorite"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                    <p>Доступний</p>
+                  </div>
+                </div>
+                <div class="doctors-catalog-item-contactInfo">
+                  <p class="doctors-catalog-item-contactInfo-persone">Москаленко Дмитро Миколайович</p>
+                  <p class="doctors-catalog-item-contactInfo-persone__type">Інфекціонист, Лікар-нарколог дільничий, Лікар-інфекціоніст дитячий, Лікар-хірург дитячий</p>
+                  <div class="doctors-catalog-item-contactInfo-persone__location"><i class="material-icons">place</i>
+                    <div class="doctors-catalog-item-contactInfo-persone__location-streat">
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__bold">м. Луцьк, пр. Соборності 89</p>
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__active">Луцька міська клінічна лікарня</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctor-services">
+                  <h5 class="doctor-servives-titl">Послуги та ціни:</h5>
+                  <ul>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Консультація</p>
+                      <p class="doctor-servicesAndPrices__price">- від 100 грн</p>
+                    </li>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Сеанс терапії</p>
+                      <p class="doctor-servicesAndPrices__price">- від 300 грн</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="doctors-catalog-item">
+              <div class="doctors-catalog-item__wrapper">
+                <div class="doctors-catalog-item-top">
+                  <div class="doctors-catalog-item-top-info">
+                    <ul>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">star</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">4,9</p>
+                          <p class="top-info-group__text">Рейтинг</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">chat</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">123</p>
+                          <p class="top-info-group__text">Відвідувача</p>
+                        </div>
+                      </li>
+                      <li class="doctors-catalog-item-top-info-group"><span class="doctors-catalog-item-top-info-group__icon"><i class="material-icons">calendar_today</i></span>
+                        <div class="doctors-catalog-item-top-info-group__text">
+                          <p class="top-info-group__bold">24</p>
+                          <p class="top-info-group__text">Бронювань</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="doctors-catalog-item-top-img">
+                    <div class="doctors-catalog-item-top-img__img"><img src="" alt=""/><span class="doctors-catalog-item-top-img__online"></span>
+                      <button class="doctors-catalog-item-top-img__favorite"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                    <p>Доступний</p>
+                  </div>
+                </div>
+                <div class="doctors-catalog-item-contactInfo">
+                  <p class="doctors-catalog-item-contactInfo-persone">Лозовий Юрій Володимирович</p>
+                  <p class="doctors-catalog-item-contactInfo-persone__type">Інфекціонист, Лікар-нарколог дільничий, Лікар-інфекціоніст дитячий, Лікар-хірург дитячий</p>
+                  <div class="doctors-catalog-item-contactInfo-persone__location"><i class="material-icons">place</i>
+                    <div class="doctors-catalog-item-contactInfo-persone__location-streat">
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__bold">м. Луцьк, пр. Соборності 89</p>
+                      <p class="doctors-catalog-item-contactInfo-persone__location-streat__active">Луцька міська клінічна лікарня</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctor-services">
+                  <h5 class="doctor-servives-titl">Послуги та ціни:</h5>
+                  <ul>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Консультація</p>
+                      <p class="doctor-servicesAndPrices__price">- від 100 грн</p>
+                    </li>
+                    <li class="doctor-servicesAndPrices">
+                      <p class="doctor-servicesAndPrices__service">Сеанс терапії</p>
+                      <p class="doctor-servicesAndPrices__price">- від 300 грн</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="servicesAndPrices">
+      <div class="wrapper servicesAndPrices-wrapper">
+        <h3 class="servicesAndPrices-catalog-title">Спеціальності</h3>
+        <div class="servicesAndPrices-catalog-slider">
+          <div class="servicesAndPrices-catalog-item"><img src="" alt=""/>
+            <h5 class="servicesAndPrices-catalog-item__titl">Повне офтальмологічне обстеження з консультацією лікаря для дітей</h5>
+            <div class="servicesAndPrices-catalog-item__wrapper">
+              <div class="servicesAndPrices-catalog-item__services">
+                <ul>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Цена:</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">320 грн</p>
+                  </li>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Тривалість</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">1 год 45 хв</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="servicesAndPrices-catalog-item__Btn"><a href="">Записатися</a></div>
+            </div>
+          </div>
+          <div class="servicesAndPrices-catalog-item"><img src="" alt=""/>
+            <h5 class="servicesAndPrices-catalog-item__titl">Консультація з частковим обстеженням (з призначенням лікування)</h5>
+            <div class="servicesAndPrices-catalog-item__wrapper">
+              <div class="servicesAndPrices-catalog-item__services">
+                <ul>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Цена:</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">320 грн</p>
+                  </li>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Тривалість</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">1 год 45 хв</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="servicesAndPrices-catalog-item__Btn"><a href="">Записатися</a></div>
+            </div>
+          </div>
+          <div class="servicesAndPrices-catalog-item"><img src="" alt=""/>
+            <h5 class="servicesAndPrices-catalog-item__titl">Повне офтальмологічне обстеження з консультацією лікаря для пенсіонерів</h5>
+            <div class="servicesAndPrices-catalog-item__wrapper">
+              <div class="servicesAndPrices-catalog-item__services">
+                <ul>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Цена:</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">320 грн</p>
+                  </li>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Тривалість</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">1 год 45 хв</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="servicesAndPrices-catalog-item__Btn"><a href="">Записатися</a></div>
+            </div>
+          </div>
+          <div class="servicesAndPrices-catalog-item"><img src="" alt=""/>
+            <h5 class="servicesAndPrices-catalog-item__titl">Діагностика сердця та сосудів</h5>
+            <div class="servicesAndPrices-catalog-item__wrapper">
+              <div class="servicesAndPrices-catalog-item__services">
+                <ul>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Цена:</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">320 грн</p>
+                  </li>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Тривалість</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">1 год 45 хв</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="servicesAndPrices-catalog-item__Btn"><a href="">Записатися</a></div>
+            </div>
+          </div>
+          <div class="servicesAndPrices-catalog-item"><img src="" alt=""/>
+            <h5 class="servicesAndPrices-catalog-item__titl">Біопсія Ексцизійна глибока (видалення всієї освіти (невриноми, лімфовузли) глибоких утворень</h5>
+            <div class="servicesAndPrices-catalog-item__wrapper">
+              <div class="servicesAndPrices-catalog-item__services">
+                <ul>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Цена:</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">320 грн</p>
+                  </li>
+                  <li class="servicesAndPrices-catalog-item-text">
+                    <p class="servicesAndPrices-catalog-item-text__text">Тривалість</p>
+                    <p class="servicesAndPrices-catalog-item-text__bold">1 год 45 хв</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="servicesAndPrices-catalog-item__Btn"><a href="">Записатися</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="wrapper news-wrapper">
+        <h3 class="news-catalog-title">Спеціальності</h3>
+        <div class="news-catalog-items">
+          <div class="news-catalog-item">
+            <div class="news-catalog-item-img"><img src="" alt=""/></div>
+            <div class="news-catalog-item-info">
+              <div class="news-catalog-item-top"><a href="">
+                  <p class="news-catalog-item__date" id="news-catalog-item__date">30 СІЧНЯ 2019, 14:23 </p></a><a href="">
+                  <p class="news-catalog-item__category" id="news-catalog-item__category">Суспільство</p></a></div>
+              <div class="news-catalog-item-info-text">
+                <h5 class="news-catalog-item-info-text__titl">Кольки у дітей: причини і як запобігти виникненню?</h5>
+                <p class="news-catalog-item-info-text__text">Іноді здорові малюки починають раптово плакати без особливої на те причини, супроводжується плач витягуванням або згинанням ніг, стисненням ручок в кулачки, появою «гримаси болю» і почервонінням особи.</p>
+              </div>
+            </div>
+          </div>
+          <div class="news-catalog-item">
+            <div class="news-catalog-item-img"><img src="" alt=""/></div>
+            <div class="news-catalog-item-info">
+              <div class="news-catalog-item-top"><a href="">
+                  <p class="news-catalog-item__date" id="news-catalog-item__date">30 СІЧНЯ 2019, 14:23 </p></a><a href="">
+                  <p class="news-catalog-item__category" id="news-catalog-item__category">Суспільство</p></a></div>
+              <div class="news-catalog-item-info-text">
+                <h5 class="news-catalog-item-info-text__titl">Запрошуємо батьків, лікарів та журналістів на тренінг «Агентів змін з вакцинації»</h5>
+                <p class="news-catalog-item-info-text__text">22-23 квітня в Києві відбудеться тренінг "Агентів змін" для лікарів, батьків та представників ЗМІ на тему вакцинації. Головна мета заходу - підготовка активістів, які будуть проводити інформаційно</p>
+              </div>
+            </div>
+          </div>
+          <div class="news-catalog-item">
+            <div class="news-catalog-item-img"><img src="" alt=""/></div>
+            <div class="news-catalog-item-info">
+              <div class="news-catalog-item-top"><a href="">
+                  <p class="news-catalog-item__date" id="news-catalog-item__date">30 СІЧНЯ 2019, 14:23 </p></a><a href=""> 
+                  <p class="news-catalog-item__category" id="news-catalog-item__category">Суспільство</p></a></div>
+              <div class="news-catalog-item-info-text">
+                <h5 class="news-catalog-item-info-text__titl">Швидкість загоєння після хірургічних втручань збільшилася на 50%!</h5>
+                <p class="news-catalog-item-info-text__text">Клініки «Парнас Дент» і «Парнас Центр» раді представити інноваційні методики, які спрямовані на збільшення швидкості загоєння після хірургічних втручань на 50%!</p>
+              </div>
+            </div>
+          </div>
+          <div class="news-catalog-item">
+            <div class="news-catalog-item-img"><img src="" alt=""/></div>
+            <div class="news-catalog-item-info">
+              <div class="news-catalog-item-top"><a href="">
+                  <p class="news-catalog-item__date" id="news-catalog-item__date">30 СІЧНЯ 2019, 14:23 </p></a><a href="">
+                  <p class="news-catalog-item__category" id="news-catalog-item__category">Суспільство</p></a></div>
+              <div class="news-catalog-item-info-text">
+                <h5 class="news-catalog-item-info-text__titl">Інтерв'ю Андрія Харкова - одного з кращих пластичних хірургів м.Києва</h5>
+                <p class="news-catalog-item-info-text__text">Що важливо для щастя жінки і як пластичний хірург може допомогти досягти цього стану щастя? Про це в інтерв'ю розповів засновник клініки Medical Club, доктор медичних наук, хірург вищої категорії,</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hotline">
+      <div class="hotline-block"><img class="hotline-img" src="" alt="УТУ МАВ БУТИ СТЕТОСКОП ТАКОГО ЯК ХОЧУ НЕМАЭ("/>
+        <h5 class="hotline-block-info">Ваш онлайн-органайзер здоров'я для всієї сім'ї завжди на зв'язку. </h5><a class="hotline-block-btn" href="">
+          <p>Почати безкоштовно</p></a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper footer-wrapper">
+        <div class="footer-top">
+          <div class="footer-top-box">
+            <h4 class="footer-top-titl">Компанія</h4>
+            <div class="footer-top-nav"><a href="">Про нас</a><a href="">Новини</a><a href="">Довідковий центр</a></div>
+          </div>
+          <div class="footer-top-box">
+            <h4 class="footer-top-titl">Контакти</h4><a class="footer-top-mail" href="mailto:moehealthmapsapi@gmail.com">moehealthmapsapi@gmail.com</a>
+            <ul class="footer-top-links"><a class="footer-top-link" href="">
+                <li> <i class="fab fa-facebook-f"></i></li></a><a class="footer-top-link" href="">
+                <li> <i class="fab fa-instagram"></i></li></a><a class="footer-top-link" href="">
+                <li> <i class="fab fa-telegram-plane"></i></li></a></ul>
+          </div>
+          <div class="footer-top-box">
+            <h4 class="footer-top-titl">Підписатися на розсилку</h4>
+            <div class="search footer-search">
+              <input class="search-line footer-search-line" type="email" maxlength="25" placeholder="Знайти фахівця"/>
+              <div class="searchBtn">
+                <input class="searchBtn__btn" type="button"/><i class="material-icons">arrow_forward</i>
+              </div>
+            </div>
+          </div>
+          <div class="footer-top-box last-footer-top-box">
+            <button class="lang-vis footer-lang-vis">
+              <div class="lang-vis-top footer-lang-vis-top">
+                <p class="lang-vis-text">Українська</p><i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="lang-list footer-lang-list">
+                <ul class="lang-list-items"><i class="fas fa-caret-up"></i>
+                  <li class="lang-list-item footer-lang-list-item"><img src="../../img/icon/ukraine-flag-icon-64.png" alt="" width="27" height="16"/>
+                    <p>Українська</p>
+                  </li>
+                  <li class="lang-list-item footer-lang-list-item"><img src="../../img/icon/russia-flag-icon-64.png" alt="" width="27" height="16"/>
+                    <p>Русский</p>
+                  </li>
+                  <li class="lang-list-item footer-lang-list-item"><img src="../../img/icon/united-kingdom.png" alt="" width="27" height="16"/>
+                    <p>English</p>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <div class="footer-appStore"><a href=""><img src="../img/icon/apple-app-store-icon-e1485370451143.png" alt="" width="120px" height="40px"/></a><a href=""><img src="../img/icon/google-play-badge.png" alt="" width="120px" height="40px"/></a></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left"><i class="fas fa-heartbeat footer-bottom-heart"></i>
+            <p>2019 MOE Health. Medical Online Information System</p>
+          </div>
+          <div class="footer-bottom-right"><a href="">Захист даних</a><a href="">Політика приватності</a><a href="">Правила коистування</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+.header
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom:  130px 
+
+.header-wrapper
+  width: 100%
+  display: flex
+  flex-flow: column
+  position: relative
+  padding-top: 30px 
+
+.header-img
+  display: flex
+  justify-content: center
+  width: 100%
+  height: 700px
+  
+.header-img__img
+  width: 98%
+  height: 100%
+  border-radius: 40px
+  background: #16395B
+
+.header-name
+  position: absolute
+  width: 100%
+  bottom: -85px
+  display: flex
+  justify-content: center
+
+
+.header-name-left
+  display: flex
+  flex-flow: column
+  margin-left: 30px 
+  
+
+.header-name-img
+  display: flex
+  position: relative
+
+.header-name-img__logo
+  width: 160px
+  height: 160px
+  border: 1px solid #C0D3FE
+  border-radius: 50%
+  background: #fff
+
+.header-name-img__favorite
+  position: absolute
+  width: 40px
+  height: 40px
+  bottom: 0px
+  background: #fff
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #06CF9A
+  // -webkit-box-shadow: -15px 16px 77px -4px rgba(0,0,0,0.75);
+  // -moz-box-shadow: -15px 16px 77px -4px rgba(0,0,0,0.75);
+  box-shadow: -2px 2px 20px -4px rgba(0,0,0,0.75);
+
+.header-name-text
+  display: flex
+  flex-flow: column
+
+.header-name-text
+  margin-bottom: 40px
+  width: 650px
+  color: #FFFFFF
+  font-family: "Avenir Next Cyr"
+  font-size: 30px
+  font-weight: bold
+  line-height: 0
+
+.header-name-text__text
+  font-size: 18px
+  margin: 0
+
+// Header nav
+.header-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 80px
+
+// REIT
+.header-nav-reit
+  display: flex
+
+.header-nav-reit ul
+  display: flex
+
+.header-nav-reit-item
+  margin-left: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.header-nav-reit-item p
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: 500
+  line-height: 0
+
+.header-nav-reit-item i
+  color: #06CF9A
+
+// HEADER NAV BTN
+.header-nav-btns
+  display: flex
+  justify-content: space-around
+
+.header-nav-btn
+  position: relative
+  margin-right: 10px 
+  padding: 0 20px
+  border: none
+  outline: none
+  background: none
+  display: flex
+  align-items: center
+  height: 40px
+  border: 2px solid #C0D3FE
+  border-radius: 20px 
+  background-color: #FFFFFF
+  &:hover
+    border: 2px solid #00D7A9
+
+.header-nav-btn__search
+  background: none
+  border: none
+  outline: none
+  &:hover
+    border: none
+
+.header-nav-btn__map
+  width: 40px
+  height: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0 0
+  color: #C0D3FE
+  border-radius: 50%
+
+.header-nav-btn p
+  color: #010101
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+  line-height: 0
+
+.header-nav-btn__active
+  border: 2px solid #00D7A9
+  .header-nav-btn-info
+    display: flex
+
+.header-nav-btn-info
+  position: relative
+  display: none
+  flex-flow: column
+  position: absolute
+  top: -538px
+  left: -10px
+  background: #fff
+  height: max-content
+  border-radius: 20px 20px 0 0
+  padding: 30px 30px 5px 30px
+
+.header-info-arrowDown
+  background: none
+  border: none
+  outline: none
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  right: 50px
+  top: -15px
+  height: 30px
+  width: 30px
+  border: 1px solid #C0D3FE
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50% 
+  background-color: #FFFFFF
+  color: #06CF9A
+
+.info-text
+  display: flex
+  flex-flow: column
+  margin-bottom: 20px
+  // justify-content: flex-start
+  align-items: flex-start
+  width: 330px
+  // height: max-content
+
+.info-text h3
+  margin-bottom: 20px
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: bold
+  line-height: 0
+
+.info-text__text
+  display: flex
+  flex-flow: column wrap
+  // align-items: flex-start
+  text-align: left
+
+.info-text__text p 
+  margin-bottom: 10px
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+  line-height: 18px 
+
+.info-link
+  display: flex
+  height: 36px
+  width: 180px
+  margin-bottom: 20px
+  border: 1px solid #00D7A9
+  border-radius: 20px
+
+.info-link__link
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  text-decoration: none
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+  line-height: 18px
+
+.info-contact
+  display: flex
+  flex-flow: column
+  text-align: left
+  padding: 5px 0
+
+.info-contact h3 
+  margin-bottom: 30px 
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: bold
+  line-height: 0
+
+.info-contact a 
+  text-decoration: none
+  color: #000000
+  margin-bottom: 25px
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: bold
+  line-height: 0
+
+.work-schedule
+  min-height: max-content
+
+.work-schedule__titel
+  min-height: max-content
+  margin-bottom: 20px
+
+.work-schedule__titel h3
+  display: flex
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: bold
+  line-height: 0
+
+.work-schedule__titel p
+  margin-left: 20px
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  line-height: 0
+
+
+.work-schedule__schedule
+  display: flex
+  // width: 100%
+
+.work-schedule__schedule ul 
+  display: flex
+  flex-flow: column
+  width: 100%
+
+
+.work-schedule__day
+  display: flex
+  min-height: max-content
+  margin-bottom: 4px
+
+.work-schedule__day h4
+  width: 100px
+  text-align: left
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  line-height: 18px
+
+.work-schedule__day p
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  line-height: 18px

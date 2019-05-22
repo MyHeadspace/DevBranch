@@ -1,0 +1,33 @@
+div(class="main-nav")
+  div(class="logo")
+    i(class="fas fa-heartbeat logo-fa")
+    h2(class="logoText logoText-bold") Moe
+    h2(class="logoText")  Health
+  div(class="search")
+    input(class="search-line" type="search" maxlength="25" placeholder="Знайти фахівця")
+    div(class="searchBtn")
+      input(class="searchBtn__btn" type="button")
+      i(class="fas fa-search")
+  div(class="mainMenu")
+    button(class="lang-vis")
+      div(class="lang-vis-top")
+        p(class="lang-vis-text") Українська
+        i(class="fas fa-chevron-down")
+      div(class="lang-list")
+        ul(class="lang-list-items")
+          i(class="fas fa-caret-up")
+          li(class="lang-list-item")
+            img(src="../../img/icon/ukraine-flag-icon-64.png", alt="" width="27" height="16")
+            p Українська
+          li(class="lang-list-item")
+            img(src="../../img/icon/russia-flag-icon-64.png", alt="" width="27" height="16")
+            p Русский
+          li(class="lang-list-item")
+            img(src="../../img/icon/united-kingdom.png", alt="" width="27" height="16")
+            p English
+    button(class="login")
+      i(class="material-icons login-img") lock_open
+      p(class="login-text") Увійти
+    button(class="menu")
+      p(class="menu-text") МЕНЮ
+      i(class="material-icons") apps

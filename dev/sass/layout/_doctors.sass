@@ -1,0 +1,272 @@
+.doctors
+  display: flex
+  justify-content: center
+  margin-bottom: 90px
+
+.doctors-wrapper
+  width: 100%
+
+.doctors-catalog
+  display: flex
+  flex-flow: column
+
+.doctors-catalog-top
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+
+.doctors-catalog-title
+  color: #16395B
+  font-family: "Avenir Next Cyr"
+  font-size: 24px
+  font-weight: bold
+
+.doctors-catalog-top a 
+  text-decoration: none
+  color: #00D7A9
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+  text-transform: uppercase
+  
+.doctors-catalog-slider
+  height: max-content
+
+.doctors-catalog-item
+  // position: relative
+  margin: 0 10px
+  overflow: hidden
+  display: flex
+  padding: 30px
+  max-width: 350px
+  border-radius: 20px 
+  background-color: #FFFFFF
+  box-shadow: 0 20px 40px NaNpx rgba(0,0,0,0.1)
+
+.doctors-catalog-item__active
+  overflow: visible
+  background: #fff
+  border: 1px solid #00D7A9
+  border-radius: 20px
+  .doctors-catalog-item__wrapper
+    height: max-content
+    overflow: visible
+    // padding: 30px
+    // position: absolute
+    // top: 0
+    // left: 0
+    display: flex
+    flex-flow: column
+    width: 100%
+    height: max-content
+  .doctors-catalog-item-top-img__favorite
+    display: flex
+  .doctors-catalog-item-contactInfo
+    border-bottom: 1px solid #D2E1F5 
+    margin-bottom: 20px  
+  .doctors-catalog-item-contactInfo-persone__type
+    height: max-content
+  .doctors-catalog-item-contactInfo-persone__location-streat
+    margin-bottom: 20px
+  .doctors-catalog-item-contactInfo-persone__location-streat__active
+    display: flex
+  .doctor-services
+    display: flex
+
+.doctors-catalog-item__wrapper
+  width: 100%
+
+.doctors-catalog-item-top
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+
+
+.doctors-catalog-item-top-info-group
+  display: flex
+  align-items: center
+  margin-bottom: 10px
+
+.doctors-catalog-item-top-info-group__icon
+  margin-right: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 32px
+  width: 32px
+  border-radius: 50%
+  background-color: #E4EDFE
+  color: #0943BF
+
+.doctors-catalog-item-top-info-group__icon i 
+  font-size: 14px
+
+.top-info-group__bold
+  color: #0943BF
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: bold
+
+.top-info-group__text
+	color: #707070
+	font-family: "Avenir Next Cyr"
+	font-size: 13px
+
+
+// top img
+.doctors-catalog-item-top-img
+  display: flex
+  flex-flow: column
+  align-items: center
+
+.doctors-catalog-item-top-img p 
+  color: #16395B
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+
+
+.doctors-catalog-item-top-img__img
+  height: 90px
+  width: 90px
+  border-radius: 50% 
+  background-color: #0943BF
+  position: relative
+
+.doctors-catalog-item-top-img__online
+  position: absolute
+  bottom: 8px
+  left: 0px
+  height: 15px
+  width: 15px
+  border-radius: 50%
+  border: 3px solid #fff
+  background-color: #00D7A9
+// #D2E1F5 -offline
+// #00D7A9 -online
+
+.doctors-catalog-item-top-img__favorite
+  outline: none
+  border: none
+  background: none
+  position: absolute
+  top: -5px
+  right: -5px
+  display: none
+  justify-content: center
+  align-items: center
+  height: 36px
+  width: 36px
+  border-radius: 50% 
+  background-color: #FFFFFF
+  box-shadow: 0 5px 10px NaNpx rgba(68,219,179,0.2)
+  color: #06CF9A
+
+// Information 
+.doctors-catalog-item-contactInfo
+  display: flex
+  flex-flow: column
+
+.doctors-catalog-item-contactInfo-persone
+  margin-bottom: 10px
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 20px
+  font-weight: bold
+
+.doctors-catalog-item-contactInfo-persone__type
+  display: flex
+  height: 20px
+  overflow: hidden
+  margin-bottom: 20px
+  color: #0943BF
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: 500
+
+
+.doctors-catalog-item-contactInfo-persone__location
+  display: flex
+  
+.doctors-catalog-item-contactInfo-persone__location i 
+  margin-right: 10px
+  height: 20px
+  width: 14px
+  color: #0943BF
+
+.doctors-catalog-item-contactInfo-persone__location-streat__bold
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+
+.doctors-catalog-item-contactInfo-persone__location-streat__active  
+  display: none
+  opacity: 0.8
+  color: #7E7E7E
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+
+.doctor-services
+  display: none
+  flex-flow: column
+
+.doctor-servives-titl
+  margin-bottom: 10px 
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 16px
+  font-weight: 500
+
+.doctor-services ul 
+  display: flex
+  flex-flow: column
+
+.doctor-servicesAndPrices
+  display: flex
+
+.doctor-servicesAndPrices__service
+  opacity: 0.7
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+  line-height: 18px
+
+.doctor-servicesAndPrices__price
+  margin-left: 10px 
+  color: #000000
+  font-family: "Avenir Next Cyr"
+  font-size: 14px
+  font-weight: 500
+  line-height: 18px
+
+.doctors-arrow
+  position: absolute
+  bottom: -70px
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 50px
+  width: 50px
+  border-radius: 50%
+  background-color: #E4EDFE
+  &:hover
+    background-color: #00D7A9
+  // E4EDFE
+
+.doctors-arrow-right
+  right: 500px
+
+.doctors-arrow-left
+  left: 500px
+
+.slick-dots
+  position: absolute
+
+.slick-dots li 
+  border-radius: 50%
+  height: 8px
+  width: 8px
+  background-color: #00D7A9
+  bottom: -30px
